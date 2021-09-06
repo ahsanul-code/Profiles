@@ -37,3 +37,43 @@
     bottom: -50px;
     transform: translateX(-50%);
 }
+.info h2{
+    font-weight:normal;
+}
+.info p{
+    font-size: 12px;
+    margin:6px 0;
+}
+.fab{
+    font-size: 20px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: #5088fb;
+}
+.fa-twitter{
+    color: #1da1f2;
+}
+.fa-youtube{
+    color: #ff0000;
+}
+.fa-instagram{
+    color: #e95950;
+}
+.dark{
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+.icons{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.col:hover .icons{
+    max-height: 100px;
+    filter: grayscale(0%);
+}
+.col:hover .dark{
+    filter: grayscale(0%);
+}
