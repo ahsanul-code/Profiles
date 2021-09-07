@@ -77,3 +77,15 @@
 .col:hover .dark{
     filter: grayscale(0%);
 }
+.layer{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid red;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.col:hover .layer{
+    max-height: 100%;
+}
